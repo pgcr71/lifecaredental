@@ -35,7 +35,7 @@ const Login = () => {
   return (
     <>
       <Breadcrumbs title="Login" />
-      <div className="@container">
+      <div className="container">
         <div
           className="flex gap-8 items-center justify-center "
           style={{ minHeight: "65vh" }}

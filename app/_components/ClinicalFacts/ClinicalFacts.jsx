@@ -10,7 +10,7 @@ const ClinicalFacts = () => {
         }}
       >
         <div className="opacity-80 absolute bg-black  w-full h-80"></div>
-        <div className="@container relative py-8 text-center text-white">
+        <div className="container relative py-8 text-center text-white">
           <h1 className="text-4xl py-2 font-Poppins font-semibold">
             Our <span className="text-primary">Clinical</span> Facts
           </h1>

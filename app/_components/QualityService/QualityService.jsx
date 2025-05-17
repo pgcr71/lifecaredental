@@ -1,10 +1,11 @@
+import { faHandPointRight } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const QualityService = () => {
   return (
     <>
-      <div className="@container lg:flex py-16">
+      <div className="container lg:flex py-16">
         <div className="h-full lg:w-2/3 w-full">
           <img className="w-full" src='./images/happy_patient.png' alt="" />
         </div>
@@ -22,19 +23,19 @@ const QualityService = () => {
           <div className="lg:flex justify-between">
             <ul>
               <li className="flex">
-                <i className="far fa-hand-point-right text-3xl text-green-500"></i>
+                <FontAwesomeIcon icon={faHandPointRight} className="far fa-hand-point-right text-3xl text-green-500"></FontAwesomeIcon>
                 <h1 className="text-lg pb-8 px-4 uppercase font-bold leading-snug text-black hover:opacity-75">
                   Trained Staff
                 </h1>
               </li>
               <li className="flex">
-                <i className="far fa-hand-point-right text-3xl text-green-500"></i>
+                <FontAwesomeIcon icon={faHandPointRight} className="far fa-hand-point-right text-3xl text-green-500"></FontAwesomeIcon>
                 <h1 className="text-lg pb-8 px-4 uppercase font-bold leading-snug text-black hover:opacity-75">
                   We provide quality Treatment
                 </h1>
               </li>
               <li className="flex">
-                <i className="far fa-hand-point-right text-3xl text-green-500"></i>
+                <FontAwesomeIcon icon={faHandPointRight} className="far fa-hand-point-right text-3xl text-green-500"></FontAwesomeIcon>
                 <h1 className="text-lg pb-8 px-4 uppercase font-bold leading-snug text-black hover:opacity-75">
                   Best Price
                 </h1>

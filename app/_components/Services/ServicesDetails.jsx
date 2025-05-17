@@ -20,7 +20,7 @@ const ServicesDetails = () => {
   return (
     <>
       <Breadcrumbs title={data?.title} />
-      <div className="@container py-16">
+      <div className="container py-16">
         <div className="grid lg:grid-cols-3 gap-6 lg:justify-items-end">
           <div className="lg:col-span-2">
             <img src={data?.image} alt={data?.title} />

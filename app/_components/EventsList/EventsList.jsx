@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const EventsList = () => {
   return (
@@ -9,7 +11,7 @@ const EventsList = () => {
         backgroundImage: `url('./images/event-bg.png')`,
       }}
     >
-      <div className="@container py-16">
+      <div className="container py-16">
         <div className="py-8 text-center">
           <h1 className="text-center text-4xl font-bold font-Roboto">
             Upcoming Events
@@ -32,7 +34,7 @@ const EventsList = () => {
               <Link href="#" className="flex">
                 <span className="px-2">View More</span>
                 <span>
-                  <i className="fas fa-arrow-right"></i>
+                  <FontAwesomeIcon icon={faArrowRight} className="fas fa-arrow-right"></FontAwesomeIcon>
                 </span>
               </Link>
             </h1>
@@ -51,7 +53,7 @@ const EventsList = () => {
               <Link href="#" className="flex">
                 <span className="px-2">View More</span>
                 <span>
-                  <i className="fas fa-arrow-right"></i>
+                  <FontAwesomeIcon icon={faArrowRight} className="fas fa-arrow-right"></FontAwesomeIcon>
                 </span>
               </Link>
             </h1>
@@ -70,7 +72,7 @@ const EventsList = () => {
               <Link href="#" className="flex">
                 <span className="px-2">View More</span>
                 <span>
-                  <i className="fas fa-arrow-right"></i>
+                  <FontAwesomeIcon icon={faArrowRight} className="fas fa-arrow-right"></FontAwesomeIcon>
                 </span>
               </Link>
             </h1>
@@ -89,7 +91,7 @@ const EventsList = () => {
               <Link href="#" className="flex">
                 <span className="px-2">View More</span>
                 <span>
-                  <i className="fas fa-arrow-right"></i>
+                  <FontAwesomeIcon icon={faArrowRight} className="fas fa-arrow-right"></FontAwesomeIcon>
                 </span>
               </Link>
             </h1>

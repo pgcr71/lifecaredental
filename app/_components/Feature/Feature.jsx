@@ -1,13 +1,15 @@
-import React from "react";
 
+import { faTeethOpen, faTooth, faTeeth } from "@fortawesome/free-solid-svg-icons";
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Feature = () => {
   return (
     <>
       <div className="bg-gradient-to-r from-primary to-secondary">
-        <div className="@container grid lg:grid-cols-3 grid-cols-1 gap-6 text-white">
+        <div className="container grid lg:grid-cols-3 grid-cols-1 gap-6 text-white">
           <div className="flex lg:px-8  lg:py-8 pt-12">
             <div>
-              <i className="fas fa-teeth-open text-6xl py-6 px-4"></i>
+              <FontAwesomeIcon icon={faTeethOpen} className="fas fa-teeth-open text-6xl py-6 px-4"></FontAwesomeIcon>
             </div>
             <div>
               <h1 className="text-md pb-2 uppercase font-bold leading-snug text-white hover:opacity-75">
@@ -21,7 +23,7 @@ const Feature = () => {
           </div>
           <div className="flex lg:px-8 lg:py-8 py-2">
             <div>
-              <i className="fas fa-tooth text-6xl py-6 px-4"></i>
+              <FontAwesomeIcon icon= {faTooth} className="fas fa-tooth text-6xl py-6 px-4"></FontAwesomeIcon>
             </div>
             <div>
               <h1 className="text-md pb-2 uppercase font-bold leading-snug text-white hover:opacity-75">
@@ -35,7 +37,7 @@ const Feature = () => {
           </div>
           <div className="flex lg:px-8 lg:py-8 py-2">
             <div>
-              <i className="fas fa-teeth text-6xl py-6 px-4"></i>
+              <FontAwesomeIcon icon={faTeeth} className="fas fa-teeth text-6xl py-6 px-4"></FontAwesomeIcon>
             </div>
             <div>
               <h1 className="text-md pb-2 uppercase font-bold leading-snug text-white hover:opacity-75">

@@ -4,20 +4,23 @@ import React from "react";
 import Link from "next/link";
 import AuthProvider, { AuthContext } from "../Context/AuthContext";
 import { useContext } from "react";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const Header = () => {
 
   let {currentUser, logout} =  useContext(AuthContext);;
 
   return (
     <div className="bg-gray-100">
-      <div className="@container flex items-center justify-between py-2">
+      <div className="container flex items-center justify-between py-2">
         <div className="hidden md:flex">
           <span className="border-r-2 border-black px-2">
-            <i className="far fa-envelope w-5 text-primary"></i>
+            <FontAwesomeIcon icon={faEnvelope} className="far fa-envelope w-5 text-primary"></FontAwesomeIcon>
             info@adc.com
           </span>
           <span className="px-2">
-            <i className="fas fa-phone text-primary"></i> +8801600000000
+            <FontAwesomeIcon icon={faPhone} className="fas fa-phone text-primary"></FontAwesomeIcon> +8801600000000
           </span>
         </div>
         <div className="flex items-center justify-between text-primary ">

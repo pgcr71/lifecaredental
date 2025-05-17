@@ -3,6 +3,8 @@
 
 import { useState } from "react";
 import Link  from "next/link";
+import { faBars, faTooth } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Menu = () => {
   const [menuOpen, setMenuOpen] = useState();
@@ -10,13 +12,13 @@ const Menu = () => {
     <div className="flex flex-wrap">
       <div className="w-full">
         <nav className="relative flex flex-wrap items-center justify-between px-2 py-3">
-          <div className="@container px-4 mx-auto flex flex-wrap items-center justify-between">
+          <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
             <div className="w-full relative flex justify-between lg:w-auto  lg:static lg:block lg:justify-start">
               <Link
                href="/"
                 className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-black"
               >
-                <i className="fas fa-tooth text-4xl text-primary"></i>
+                <FontAwesomeIcon icon={faTooth} className="fas fa-tooth text-4xl text-primary"></FontAwesomeIcon>
                 <span className="text-2xl font-Poppins">
                   Aysha Dental <span className="text-primary">Care</span>
                 </span>
@@ -26,7 +28,7 @@ const Menu = () => {
                 type="button"
                 onClick={() => setMenuOpen(!menuOpen)}
               >
-                <i className="fas fa-bars"></i>
+                <FontAwesomeIcon icon={faBars} className="fas fa-bars"></FontAwesomeIcon>
               </button>
             </div>
 

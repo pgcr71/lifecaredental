@@ -47,14 +47,14 @@ const SocailLogin = ({ title }) => {
           onClick={handelGoogleSingUp}
           className="text-white px-2 py-2 bg-primary rounded-md shadow-lg"
         >
-          <i className="fab fa-google ml-2"></i>
+          <FontAwesomeIcon icon=className="fab fa-google ml-2"></FontAwesomeIcon>
           <span> Google</span>
         </button>
         <button
           onClick={handelGithubSingUp}
           className="text-white px-2 py-2 bg-primary rounded-md shadow-lg"
         >
-          <i className="fab fa-github-square ml-2"></i>
+          <FontAwesomeIcon icon=className="fab fa-github-square ml-2"></FontAwesomeIcon>
           <span> Github</span>
         </button>
       </div>

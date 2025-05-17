@@ -11,7 +11,7 @@ const Services = ({ home }) => {
       {!home && <Breadcrumbs title="Our Services" />}
 
       <div className="bg-white">
-        <div className="@container pb-16">
+        <div className="container pb-16">
           <div className="text-center py-8">
             {home ? (
               <h1 className="text-4xl py-2 font-Poppins font-semibold">

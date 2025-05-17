@@ -1,12 +1,15 @@
-import React from "react";
+import { faFacebookSquare, faInstagramSquare, faLinkedin, faTwitterSquare } from "@fortawesome/free-brands-svg-icons";
+import { faArrowRight, faTooth, } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
+
 const Footer = () => {
   return (
     <div className="bg-gray-100 py-16">
-      <div className="@container lg:flex lg:text-center lg:justify-between">
+      <div className="container lg:flex lg:text-center lg:justify-between">
         <div className="lg:w-1/3">
           <div className="flex">
-            <i className="fas fa-tooth text-4xl text-primary"></i>
+            <FontAwesomeIcon icon={faTooth} className="fas fa-tooth text-4xl text-primary"></FontAwesomeIcon>
             <span className="text-2xl font-Poppins">
               Aysha Dental <span className="text-primary">Care</span>
             </span>
@@ -23,24 +26,24 @@ const Footer = () => {
               target="_blank"
               href="https://www.facebook.com/"
             >
-              <i className="fab fa-facebook-square ml-2"></i>
+              <FontAwesomeIcon icon={faFacebookSquare} className="fab fa-facebook-square ml-2"></FontAwesomeIcon>
             </a>
             <a
               rel="noreferrer"
               target="_blank"
               href="https://www.instagram.com/"
             >
-              <i className="fab fa-instagram-square  ml-2"></i>
+              <FontAwesomeIcon icon={faInstagramSquare} className="fab fa-instagram-square  ml-2"></FontAwesomeIcon>
             </a>
             <a rel="noreferrer" target="_blank" href="https://twitter.com/">
-              <i className="fab fa-twitter-square ml-2"></i>
+              <FontAwesomeIcon icon={faTwitterSquare} className="fab fa-twitter-square ml-2"></FontAwesomeIcon>
             </a>
             <a
               rel="noreferrer"
               target="_blank"
               href="https://www.linkedin.com/"
             >
-              <i className="fab fa-linkedin ml-2"></i>
+              <FontAwesomeIcon icon={faLinkedin} className="fab fa-linkedin ml-2"></FontAwesomeIcon>
             </a>
           </div>
         </div>
@@ -71,7 +74,7 @@ const Footer = () => {
               placeholder="Your Email Address"
             />
             <button className="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition">
-              <i className="fas fa-arrow-right"></i>
+              <FontAwesomeIcon icon={faArrowRight} className="fas fa-arrow-right"></FontAwesomeIcon>
             </button>
           </div>
         </div>

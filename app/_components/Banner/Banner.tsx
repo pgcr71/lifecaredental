@@ -11,11 +11,11 @@ const Banner = () => {
         backgroundImage: `url('./images/banner.png')`,
       }}
     >
-      <div className="@container">
+      <div className="container">
         <h1 className="text-6xl capitalize text-gray-800 font-medium mb-4">
           Eat wisely, smile nicely
         </h1>
-        <p className="w-50">
+        <p >
           Relax, this is going to be so easy. The smart way to find a dentist.{" "}
           <br />
           Get matched with a great dentist today. Seriously, it’s time.

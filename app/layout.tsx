@@ -4,8 +4,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./_components/Header/Header";
 import Menu  from "./_components/Menu/Menu";
-
+import Footer  from "./_components/Footer/Footer";
 import AuthProvider from "./_components/Context/AuthContext";
+import Fontawesome from "./_components/fontawesome";
 
 // export const metadata: Metadata = {
 //   title: "Create Next App",
@@ -22,10 +23,12 @@ export default function RootLayout({
       <body
         className={`antialiased`}
       >
+        <Fontawesome></Fontawesome>
         <AuthProvider>
           <Header />
           <Menu />
           {children}
+          <Footer></Footer>
         </AuthProvider>
       </body>
 

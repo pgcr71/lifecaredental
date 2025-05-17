@@ -39,7 +39,7 @@ const Register = () => {
   return (
     <>
       <Breadcrumbs title="Register" />
-      <div className="@container">
+      <div className="container">
         <div
           className="flex gap-8 items-center justify-center "
           style={{ minHeight: "75vh" }}

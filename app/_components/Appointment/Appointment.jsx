@@ -11,7 +11,7 @@ const Appointment = () => {
   return (
     <>
       <Breadcrumbs title="Appointment" />
-      <div className="@container py-16">
+      <div className="container py-16">
         <h1 className="text-4xl text-center font-bold font-Roboto">
           Drop your <span className="text-primary">Appointment</span>{" "}
         </h1>
