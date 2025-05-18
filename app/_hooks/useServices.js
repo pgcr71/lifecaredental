@@ -5,7 +5,7 @@ const useServices = () => {
     const [services, setServices] = useState([]);
     // const baseUrl = "https://aysha-dental-care.web.app";
     useEffect(() => {
-        fetch(`./api/v1/fakeData`)
+        fetch(`/api/v1/fakeData`)
             .then(response => response.json())
             .then(data => setServices(data))
     }, [])

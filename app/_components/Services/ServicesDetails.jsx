@@ -1,12 +1,16 @@
+'use client'
+
 import React, { useEffect, useState } from "react";
-import { useParams } from "next/link";
+import { useParams } from "next/navigation";
 import useServices from "../../_hooks/useServices";
 import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
 import ServicesSidebar from "../Sidebar/ServicesSidebar";
 
-const ServicesDetails = () => {
+const ServicesDetails =  () => {
+   const {slug}  = useParams();
+   console.log(slug)
+   let [serviceId, serviceName] = slug;
   const [data, setData] = useState([]);
-  const { serviceId } = useParams();
   const [services] = useServices();
   useEffect(() => {
     let newData = [];
