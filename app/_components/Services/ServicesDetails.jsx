@@ -16,7 +16,7 @@ const ServicesDetails =  () => {
     let newData = [];
     if (services) {
       newData = services.find(
-        (data) => parseInt(data.id) === parseInt(serviceId)
+        (data) =>data.id === serviceId
       );
     }
     setData(newData);
