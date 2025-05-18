@@ -1,11 +1,11 @@
 'use client';
 
 import React from "react";
-import useServices from "../../_hooks/useServices";
 import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
 import ServicesItem from "./ServicesItem";
+import getServices from "../../_utils/getServices";
 const Services = ({ home }) => {
-  const [services] = useServices();
+  const services = getServices();
   return (
     <>
       {!home && <Breadcrumbs title="Our Services" />}

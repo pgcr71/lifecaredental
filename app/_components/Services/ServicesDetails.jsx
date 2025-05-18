@@ -2,16 +2,16 @@
 
 import React, { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
-import useServices from "../../_hooks/useServices";
 import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
 import ServicesSidebar from "../Sidebar/ServicesSidebar";
+import getServices from "../../_utils/getServices";
 
 const ServicesDetails =  () => {
    const {slug}  = useParams();
    console.log(slug)
    let [serviceId, serviceName] = slug;
   const [data, setData] = useState([]);
-  const [services] = useServices();
+  const services = getServices();
   useEffect(() => {
     let newData = [];
     if (services) {

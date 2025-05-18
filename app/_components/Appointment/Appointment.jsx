@@ -1,11 +1,12 @@
 'use client'
 
 import React, { useState } from "react";
-import useServices from "../../_hooks/useServices";
+
 import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
+import getServices from "@/app/_utils/getServices";
 
 const Appointment = () => {
-  const [services] = useServices();
+  const services = getServices();
   const [startDate, setStartDate] = useState(new Date());
 
   return (
