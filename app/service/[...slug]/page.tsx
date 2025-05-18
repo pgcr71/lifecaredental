@@ -3,8 +3,12 @@ import ServicesDetails from '../../_components/Services/ServicesDetails';
 
 export function generateStaticParams() {
     const services = getServices();
-    console.log(services.map(({ id, title }) => ({ slug: [id, title] })))
-    return services.map(({ id, title }) => ({ slug: [''+id, title] }));
+
+    return services.map(({ id, title }) => ({
+        slug: ['' + id, title.toLowerCase()
+            .replace(/[^\w ]+/g, "")
+            .replace(/ +/g, "-")]
+    }));
 }
 
 export default function Page() {
