@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="flex">
             <FontAwesomeIcon icon={faTooth} className="fas fa-tooth text-4xl text-primary"></FontAwesomeIcon>
             <span className="text-2xl font-Poppins">
-              Life Care <span className="text-primary">Care</span>
+              Life Care <span className="text-primary">Dental</span>
             </span>
           </div>
           <p className="text-justify py-4">
