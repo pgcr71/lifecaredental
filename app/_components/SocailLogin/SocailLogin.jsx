@@ -1,15 +1,19 @@
-import React, { useState } from "react";
-import { useHistory, useLocation } from "next/link";
-import { useAuth } from "../Context/AuthContext";
+'use client'
 
+import React, { useState } from "react";
+import { useRouter, usePathname } from "next/navigation";
+import { useAuth } from "../Context/AuthContext";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGoogle, faGithubSquare } from "@fortawesome/free-brands-svg-icons";
+faGoogle
 const SocailLogin = ({ title }) => {
   const { googleSignUp, githubSignUp } = useAuth();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  const history = useHistory();
-  const location = useLocation();
-  const redirect_url = location.state?.from || "/";
+  const history = useRouter();
+  const location = usePathname();
+  const redirect_url = location || "/";
 
   // Google SingUp
   const handelGoogleSingUp = async () => {
@@ -47,14 +51,14 @@ const SocailLogin = ({ title }) => {
           onClick={handelGoogleSingUp}
           className="text-white px-2 py-2 bg-primary rounded-md shadow-lg"
         >
-          <FontAwesomeIcon icon=className="fab fa-google ml-2"></FontAwesomeIcon>
+          <FontAwesomeIcon icon={faGoogle} className="fab fa-google ml-2"></FontAwesomeIcon>
           <span> Google</span>
         </button>
         <button
           onClick={handelGithubSingUp}
           className="text-white px-2 py-2 bg-primary rounded-md shadow-lg"
         >
-          <FontAwesomeIcon icon=className="fab fa-github-square ml-2"></FontAwesomeIcon>
+          <FontAwesomeIcon icon={faGithubSquare} className="fab fa-github-square ml-2"></FontAwesomeIcon>
           <span> Github</span>
         </button>
       </div>

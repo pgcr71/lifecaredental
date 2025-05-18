@@ -1,18 +1,22 @@
+
+'use client'
+
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import { Link, useHistory, useLocation } from "next/link";
+import Link from "next/link";
+
 import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
 import SocailLogin from "../SocailLogin/SocailLogin";
 import { useAuth } from "./../Context/AuthContext";
+import { useRouter, usePathname } from "next/navigation";
 
 const Register = () => {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const { signUp } = useAuth();
-
-  const history = useHistory();
-  const location = useLocation();
-  const redirect_url = location.state?.from || "/";
+  const history = useRouter();
+  const location = usePathname();
+  const redirect_url = location || "/";
 
   const {
     register,
@@ -102,7 +106,7 @@ const Register = () => {
               </button>
               <h1 className="py-4">
                 Already have an account?
-                <Link className="text-primary px-2" to="/login">
+                <Link className="text-primary px-2" href="/login">
                   Log in
                 </Link>
               </h1>

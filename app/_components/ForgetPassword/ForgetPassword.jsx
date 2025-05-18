@@ -1,6 +1,10 @@
+'use client'
+
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import { Link, useHistory } from "next/link";
+import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
+
 import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
 import { useAuth } from "./../Context/AuthContext";
 
@@ -10,7 +14,7 @@ const ForgetPassword = () => {
   const [message, setMessage] = useState("");
   const { forgetPassword } = useAuth();
 
-  const history = useHistory();
+  const history = useRouter();
 
   const {
     register,
@@ -72,7 +76,7 @@ const ForgetPassword = () => {
             </form>
             <h1 className="py-4">
               Already have an account?
-              <Link className="text-primary px-2" to="/login">
+              <Link className="text-primary px-2" href="/login">
                 Log in
               </Link>
             </h1>

@@ -1,6 +1,9 @@
+'use client'
+
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import { Link, useHistory, useLocation } from "next/link";
+import Link from "next/link";
+import { useRouter, usePathname } from "next/navigation";
 import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
 import SocailLogin from "../SocailLogin/SocailLogin";
 import { useAuth } from "./../Context/AuthContext";
@@ -10,9 +13,9 @@ const Login = () => {
   const [loading, setLoading] = useState(false);
   const { login } = useAuth();
 
-  const history = useHistory();
-  const location = useLocation();
-  const redirect_url = location.state?.from || "/";
+  const router = useRouter();
+  const location = usePathname();
+  const redirect_url = location || "/";
 
   const {
     register,
@@ -25,7 +28,7 @@ const Login = () => {
       setError("");
       setLoading(true);
       await login(data.email, data.password);
-      history.push(redirect_url);
+      router.push(redirect_url);
     } catch (error) {
       setError(error.message);
     }
@@ -89,7 +92,7 @@ const Login = () => {
               </button>
               <h1 className="py-4">
                 Don't Have an Account?
-                <Link className="text-primary px-2" to="/register">
+                <Link className="text-primary px-2" href="/register">
                   Register now
                 </Link>
               </h1>
