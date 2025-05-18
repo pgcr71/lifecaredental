@@ -1,7 +1,6 @@
 'use client';
 
 import React from "react";
-import Link from "next/link";
 
 const Banner = () => {
   return (
@@ -21,12 +20,12 @@ const Banner = () => {
           Get matched with a great dentist today. Seriously, it’s time.
         </p>
         <div className="mt-12">
-          <Link
-            href="/appointment"
+          <a
+            href='tel:7780339438'
             className="bg-primary border border-primary text-white px-3 py-2 font-medium rounded hover:bg-transparent hover:text-primary transition"
           >
-            Make an Appointment
-          </Link>
+            call us at 7780339438
+          </a>
         </div>
       </div>
     </div>

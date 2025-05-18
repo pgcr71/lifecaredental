@@ -64,21 +64,21 @@ const Menu = () => {
                     Services
                   </Link>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link
                    href="/contact"
                     className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75"
                   >
                     Contact Us
                   </Link>
-                </li>
+                </li> */}
                 <li className="nav-item bg-primary">
-                  <Link
-                   href="/appointment"
+                  <a
+                   href="tel:7780339438"
                     className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
                   >
-                    Get Appointment
-                  </Link>
+                    Call us at 7780339438
+                  </a>
                 </li>
               </ul>
             </div>

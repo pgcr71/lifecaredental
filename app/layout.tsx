@@ -1,10 +1,10 @@
 'use client'
 
 import "./globals.css";
-import Header from "./_components/Header/Header";
+// import Header from "./_components/Header/Header";
 import Menu  from "./_components/Menu/Menu";
 import Footer  from "./_components/Footer/Footer";
-import AuthProvider from "./_components/Context/AuthContext";
+// import AuthProvider from "./_components/Context/AuthContext";
 import Fontawesome from "./_components/fontawesome";
 
 // export const metadata: Metadata = {
@@ -23,12 +23,12 @@ export default function RootLayout({
         className={`antialiased`}
       >
         <Fontawesome></Fontawesome>
-        <AuthProvider>
-          <Header />
+        {/* <AuthProvider> */}
+          {/* <Header /> */}
           <Menu />
           {children}
           <Footer></Footer>
-        </AuthProvider>
+        {/* </AuthProvider> */}
       </body>
 
     </html >

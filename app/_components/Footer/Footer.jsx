@@ -59,13 +59,13 @@ const Footer = () => {
             <li className="py-1 hover:text-primary">
               <Link href="/services">Services</Link>
             </li>
-            <li className="py-1 hover:text-primary">
+            {/* <li className="py-1 hover:text-primary">
               <Link href="/contact">Contact us</Link>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div className="w-auto">
-          <h1 className="text-2xl font-Poppins">Subscribe</h1>
+          {/* <h1 className="text-2xl font-Poppins">Subscribe</h1>
 
           <div className="py-4 flex">
             <input
@@ -76,7 +76,7 @@ const Footer = () => {
             <button className="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition">
               <FontAwesomeIcon icon={faArrowRight} className="fas fa-arrow-right"></FontAwesomeIcon>
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
