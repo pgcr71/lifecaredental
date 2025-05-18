@@ -1,26 +1,18 @@
-'use client'
 
-import React, { useEffect, useState } from "react";
+'use client';
 import { useParams } from "next/navigation";
 import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
 import ServicesSidebar from "../Sidebar/ServicesSidebar";
 import getServices from "../../_utils/getServices";
 
-const ServicesDetails =  () => {
-   const {slug}  = useParams();
-   console.log(slug)
-   let [serviceId, serviceName] = slug;
-  const [data, setData] = useState([]);
+const ServicesDetails = () => {
+  const { slug } = useParams();
+  let [serviceId] = slug;
   const services = getServices();
-  useEffect(() => {
-    let newData = [];
-    if (services) {
-      newData = services.find(
-        (data) => parseInt(data.id) === parseInt(serviceId)
-      );
-    }
-    setData(newData);
-  }, [serviceId, services]);
+  let data = services.find(
+    (data) => parseInt(data.id) === parseInt(serviceId)
+  );
+
   return (
     <>
       <Breadcrumbs title={data?.title} />
