@@ -22,9 +22,9 @@ const Banner = () => {
         <div className="mt-12">
           <a
             href='tel:7780339438'
-            className="bg-primary border border-primary text-white px-3 py-2 font-medium rounded hover:bg-transparent hover:text-primary transition"
+            className="bg-primary uppercase border border-primary text-white px-3 py-2 font-medium rounded hover:bg-transparent hover:text-primary transition"
           >
-            call us at 7780339438
+            Call us at 7780339438
           </a>
         </div>
       </div>
